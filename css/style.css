@@ -1,0 +1,149 @@
+body{
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+     margin: 0;
+     padding: 0;
+}
+
+.huddle{
+    margin:50px;
+    
+}
+.huddle>img{
+    height:45px;
+}
+.container{
+    margin:3px 30px 0 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ims>img{
+    width: 40rem;
+}
+.overview{
+    width:35rem;  
+    box-sizing: border-box; 
+    padding: 30px;
+}
+
+.overview>h2{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.overview>p{
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+button{
+    background-color: white;
+    width: 12rem;
+    height: 3rem;
+    border-style: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 16px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px black;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.iconss{
+    margin: 0 5rem 2rem 0;
+}
+.fa{
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding:5px;
+    margin: 5px 8px;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 50%;  
+}
+
+.fa:hover{
+    color:hsl(300, 69%, 71%);
+}
+
+/*footer{
+    margin: 0 70px 0 50px;
+}*/
+footer>p{
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-size:contain;
+        margin: auto;
+        
+    }
+    .huddle{
+        margin:15px 0 30px 10px;
+    }
+    .huddle>img{
+        height:30px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 20px 0 20px;
+    }
+    .ims>img{
+        width: 20rem;
+    }
+    .overview{
+        width:21rem;  
+    }
+    
+    .overview>h2{
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .overview>p{
+        font-size: 17px;
+        text-align: center;
+    }
+    button{
+        width: 12rem;
+        height: 2rem;
+        font-size: 12px;
+        margin: 0 0 0 30px;
+        
+    }
+    .iconss{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 35px 0 4px;
+    }
+    .fa{
+        float: right;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        padding:5px;
+        margin: 4px 5px 30px 5px;
+    }
+}
